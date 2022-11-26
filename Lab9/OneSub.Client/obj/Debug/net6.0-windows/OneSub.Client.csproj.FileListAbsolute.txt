@@ -1,0 +1,42 @@
+D:\CodeProjects\C#\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.exe
+D:\CodeProjects\C#\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.deps.json
+D:\CodeProjects\C#\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
+D:\CodeProjects\C#\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.dll
+D:\CodeProjects\C#\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.pdb
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.csproj.AssemblyReference.cache
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\App.g.cs
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client_MarkupCompile.cache
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client_MarkupCompile.lref
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\MainWindow.baml
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.g.resources
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.AssemblyInfoInputs.cache
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.AssemblyInfo.cs
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.csproj.CoreCompileInputs.cache
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.dll
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\refint\OneSub.Client.dll
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.pdb
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.genruntimeconfig.cache
+D:\CodeProjects\C#\OneSub\OneSub.Client\obj\Debug\net6.0-windows\ref\OneSub.Client.dll
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.exe
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.deps.json
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.dll
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\bin\Debug\net6.0-windows\OneSub.Client.pdb
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client_MarkupCompile.cache
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client_MarkupCompile.lref
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.g.resources
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.AssemblyInfo.cs
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.dll
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\refint\OneSub.Client.dll
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.pdb
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\OneSub.Client.genruntimeconfig.cache
+C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Client\obj\Debug\net6.0-windows\ref\OneSub.Client.dll
