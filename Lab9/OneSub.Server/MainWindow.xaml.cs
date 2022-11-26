@@ -22,7 +22,7 @@ public partial class MainWindow : Window
     Timer currencyTimer = new(1000);
     Timer weatherTimer = new(1000);
     Timer stocksTimer = new(1000);
-    
+
 
     public MainWindow()
     {
@@ -71,9 +71,9 @@ public partial class MainWindow : Window
             SendMessageToAllClients("[Currency]\n" + ourString + "\n" ?? "[Currency] Can`t get info about currencies\n");
         }
 
-        
+
     }
-    
+
     private async Task SendWeatherInfo()
     {
         string apiKey = "084581ec-6d83-11ed-bc36-0242ac130002-0845825a-6d83-11ed-bc36-0242ac130002";
@@ -82,7 +82,7 @@ public partial class MainWindow : Window
 
         httpClient.DefaultRequestHeaders.Add("Authorization", apiKey);
 
-        var response = await httpClient.GetAsync("https://api.stormglass.io/v2/weather/point?lat=49&lng=24&params=airTemperature");
+        var response = await httpClient.GetAsync("https://api.openweathermap.org/data/3.0/onecall?lat={49.85}&lon={23.99}&exclude={daily}&appid={3817dc2be2f056779006459f56dda912}");
 
         using (var reader = new StreamReader(response.Content.ReadAsStream()))
         {
@@ -90,11 +90,11 @@ public partial class MainWindow : Window
 
             Debug.WriteLine(str);
 
-            //var obj = JObject.Parse(str)["hours"];
+            var obj = JObject.Parse(str)["hours"];
 
-            //SendMessageToAllClients("[Weather]\nLviv - " + obj?.First()["airTemperature"]?["noaa"] + "°C ; " + obj?.ElementAt(19)["airTemperature"]?["noaa"] + "°C\n");
+            SendMessageToAllClients("[Weather]\nLviv - " + obj?.First()["airTemperature"]?["noaa"] + "°C ; " + obj?.ElementAt(19)["airTemperature"]?["noaa"] + "°C\n");
 
-            SendMessageToAllClients("[Weather]\nLviv - 1.5°C ; 0.5°C\n");
+            //SendMessageToAllClients("[Weather]\nLviv - 1.5°C ; 0.5°C\n");
         }
     }
 

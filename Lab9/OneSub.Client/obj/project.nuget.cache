@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w+wADVY5YX3uCPMTZ5zmPqiE0jzG/vNWm8DSTSANJjwK9VGJuVeVjrtdwCKctjpVNjAvIymRJOnwWTz9MLAdWA==",
+  "dgSpecHash": "VkNM4OOvMcCq/rsMt0jGUS01v+19kHDMHxT6U5in/cu1IGAqeU+gy1f+M54rFH9EIuyYCQ6mGbFZjFoN+Ut5NQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\2 курс\\OS\\lab9\\OneSub\\OneSub\\OneSub.Client\\OneSub.Client.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\OperationalSystems\\Lab9\\OneSub.Client\\OneSub.Client.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
