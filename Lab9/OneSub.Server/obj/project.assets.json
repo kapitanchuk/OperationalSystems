@@ -5,10 +5,14 @@
       "Newtonsoft.Json/13.0.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Newtonsoft.Json.dll": {}
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Newtonsoft.Json.dll": {}
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "OneSub.Client/1.0.0": {
@@ -70,28 +74,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\roadt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\OperationalSystems\\Lab9\\OneSub.Server\\OneSub.Server.csproj",
+      "projectUniqueName": "C:\\_programmer\\univer\\2_course\\1_sem\\OperationalSystems\\9_lab\\Lab9\\OneSub.Server\\OneSub.Server.csproj",
       "projectName": "OneSub.Server",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\OperationalSystems\\Lab9\\OneSub.Server\\OneSub.Server.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\OperationalSystems\\Lab9\\OneSub.Server\\obj\\",
+      "projectPath": "C:\\_programmer\\univer\\2_course\\1_sem\\OperationalSystems\\9_lab\\Lab9\\OneSub.Server\\OneSub.Server.csproj",
+      "packagesPath": "C:\\Users\\roadt\\.nuget\\packages\\",
+      "outputPath": "C:\\_programmer\\univer\\2_course\\1_sem\\OperationalSystems\\9_lab\\Lab9\\OneSub.Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\roadt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -101,8 +100,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Admin\\Documents\\GitHub\\OperationalSystems\\Lab9\\OneSub.Client\\OneSub.Client.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\OperationalSystems\\Lab9\\OneSub.Client\\OneSub.Client.csproj"
+            "C:\\_programmer\\univer\\2_course\\1_sem\\OperationalSystems\\9_lab\\Lab9\\OneSub.Client\\OneSub.Client.csproj": {
+              "projectPath": "C:\\_programmer\\univer\\2_course\\1_sem\\OperationalSystems\\9_lab\\Lab9\\OneSub.Client\\OneSub.Client.csproj"
             }
           }
         }
@@ -128,7 +127,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -140,7 +140,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
