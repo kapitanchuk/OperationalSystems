@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X5I4+Ebgrolb/9T7r4U7Htr32U7fezF2zmPtnpin8pYo13isNk8+ODcYUT9btH3ND91hl4D7kNBlmlMo9UJhDA==",
+  "dgSpecHash": "+cYC3MNOIQ05uytVC3qq5JDPCtX9a8gF5STlX15BkWCFE1n2fVjorqJvwJixXGk5euE5aiCESXX2p/mJZX/mEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\OperationalSystems\\Lab9\\OneSub.Server\\OneSub.Server.csproj",
+  "projectFilePath": "C:\\_programmer\\univer\\2_course\\1_sem\\OperationalSystems\\9_lab\\Lab9\\OneSub.Server\\OneSub.Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\roadt\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }

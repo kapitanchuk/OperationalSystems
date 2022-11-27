@@ -54,3 +54,31 @@ C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Server\obj\Debug\
 C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
 C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
 C:\Users\Admin\Desktop\2 курс\OS\lab9\OneSub\OneSub\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.deps.json
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.exe
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.exe
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.deps.json
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.runtimeconfig.json
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.dll
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.pdb
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.dll
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.pdb
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.AssemblyReference.cache
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\App.g.cs
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server_MarkupCompile.cache
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server_MarkupCompile.lref
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.baml
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.g.resources
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfoInputs.cache
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfo.cs
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CoreCompileInputs.cache
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CopyComplete
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.dll
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\refint\OneSub.Server.dll
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
+C:\_programmer\univer\2_course\1_sem\OperationalSystems\9_lab\Lab9\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll

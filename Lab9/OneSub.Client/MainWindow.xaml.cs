@@ -22,6 +22,7 @@ namespace OneSub.Client
         int Port { get; set; }
         bool currency;
         bool weather;
+        bool stocks;
         public MainWindow(int port)
         {
             Port = port;
@@ -39,7 +40,7 @@ namespace OneSub.Client
                     
                 udpSocket.Bind(localIP);
 
-                byte[] data = new byte[256]; 
+                byte[] data = new byte[256];
 
                 EndPoint remoteIp = new IPEndPoint(IPAddress.Any, 0);
                     
@@ -49,6 +50,8 @@ namespace OneSub.Client
                 if (message.StartsWith("[Currency]") && currency)
                     Dispatcher.Invoke(() => MsgBox.Text += message);
                 else if (message.StartsWith("[Weather]") && weather)
+                    Dispatcher.Invoke(() => MsgBox.Text += message);
+                else if(message.StartsWith("[Stocks]")&&stocks)
                     Dispatcher.Invoke(() => MsgBox.Text += message);
                 else if (!message.StartsWith('['))
                     Dispatcher.Invoke(() => MsgBox.Text += message);
@@ -65,6 +68,11 @@ namespace OneSub.Client
             weather = true;
         }
 
+        private void StocksCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            stocks = true;
+        }
+
         private void CurrecncyCheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
             currency = false;
@@ -73,6 +81,11 @@ namespace OneSub.Client
         private void WeatherCheckBox_Unchecked(object sender, RoutedEventArgs e)
         {
             weather = false;
+        }
+
+        private void StocksCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            stocks = false;
         }
     }
 }

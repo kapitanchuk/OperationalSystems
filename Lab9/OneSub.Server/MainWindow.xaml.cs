@@ -19,7 +19,7 @@ public partial class MainWindow : Window
 {
     private int newPort = 8000;
 
-    Timer currencyTimer = new(1000);
+    Timer currencyTimer = new(3000);
     Timer weatherTimer = new(1000);
     Timer stocksTimer = new(1000);
 
@@ -76,32 +76,41 @@ public partial class MainWindow : Window
 
     private async Task SendWeatherInfo()
     {
-        string apiKey = "084581ec-6d83-11ed-bc36-0242ac130002-0845825a-6d83-11ed-bc36-0242ac130002";
+        //string apiKey = "084581ec-6d83-11ed-bc36-0242ac130002-0845825a-6d83-11ed-bc36-0242ac130002";
 
-        HttpClient httpClient = new HttpClient();
+        //HttpClient httpClient = new HttpClient();
 
-        httpClient.DefaultRequestHeaders.Add("Authorization", apiKey);
+        //httpClient.DefaultRequestHeaders.Add("Authorization", apiKey);
 
-        var response = await httpClient.GetAsync("https://api.openweathermap.org/data/3.0/onecall?lat={49.85}&lon={23.99}&exclude={daily}&appid={3817dc2be2f056779006459f56dda912}");
+        //var response = await httpClient.GetAsync("https://api.openweathermap.org/data/3.0/onecall?lat={49.85}&lon={23.99}&exclude={daily}&appid={3817dc2be2f056779006459f56dda912}");
 
-        using (var reader = new StreamReader(response.Content.ReadAsStream()))
-        {
-            var str = reader.ReadToEnd();
+        //using (var reader = new StreamReader(response.Content.ReadAsStream()))
+        //{
+        //    var str = reader.ReadToEnd();
 
-            Debug.WriteLine(str);
+        //    Debug.WriteLine(str);
 
-            var obj = JObject.Parse(str)["hours"];
+        //    var obj = JObject.Parse(str)["hours"];
+        //    SendMessageToAllClients("[Weather]\nLviv - " + obj?.First()["airTemperature"]?["noaa"] + "°C ; " + obj?.ElementAt(19)["airTemperature"]?["noaa"] + "°C\n");
 
-            SendMessageToAllClients("[Weather]\nLviv - " + obj?.First()["airTemperature"]?["noaa"] + "°C ; " + obj?.ElementAt(19)["airTemperature"]?["noaa"] + "°C\n");
-
-            //SendMessageToAllClients("[Weather]\nLviv - 1.5°C ; 0.5°C\n");
-        }
+        //    //SendMessageToAllClients("[Weather]\nLviv - 1.5°C ; 0.5°C\n");
+        //}
     }
 
     //TODO
     private async Task SendStocksInfo()
     {
-        throw new NotImplementedException();
+        HttpClient httpClient = new HttpClient();
+        var response = await httpClient.GetAsync("https://api.twelvedata.com/time_series?apikey=562c558816244c41b7681a6b16dc50b5&interval=1min&dp=1&type=stock&symbol=AAPL,ZM&format=JSON");
+        response.EnsureSuccessStatusCode();
+        using (var reader = new StreamReader(response.Content.ReadAsStream()))
+        {
+            var str = reader.ReadToEnd();
+            var obj = JObject.Parse(str);
+            SendMessageToAllClients("[Stocks]\n" + "Apple: " + obj?["AAPL"]?["values"]?.First()["open"] + "$, traded in one minute:" + obj?["AAPL"]?["values"]?.First()["volume"] + "\n");
+            Debug.WriteLine(obj?["AAPL"]?["values"]?.First());
+            //Debug.WriteLine("Apple: " + obj?["AAPL"]?["values"]?.First()["open"] + "$, traded in one minute:" + obj?["AAPL"]?["values"]?.First()["volume"] + "\n");
+        }
     }
 
     private void SendMessageToAllClients(string message)
@@ -110,11 +119,12 @@ public partial class MainWindow : Window
             SendMessage(message, port);
     }
 
-    private void Button_Click_2(object sender, RoutedEventArgs e)
+    private async void Button_Click_2(object sender, RoutedEventArgs e)
     {
         currencyTimer.Start();
         weatherTimer.Start();
         //stocksTimer.Start();
+        await SendStocksInfo();
     }
 
     private void Button_Click_3(object sender, RoutedEventArgs e)
@@ -128,8 +138,7 @@ public partial class MainWindow : Window
     {
         "Щосекунди" => 1000,
         "Щохвилини" => 60000,
-        "Щогодини" => 3600000,
-        _ => throw new NotImplementedException()
+        "Щогодини" => 3600000
     };
 
     private void SelectionChanged1(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -137,3 +146,4 @@ public partial class MainWindow : Window
         currencyTimer.Interval = GetFromString(CurrencyComboBox.SelectedValue as string);
     }
 }
+
