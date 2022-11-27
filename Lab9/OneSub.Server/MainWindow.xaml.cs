@@ -29,7 +29,7 @@ public partial class MainWindow : Window
         InitializeComponent();
 
 
-        currencyTimer.Elapsed += async (s, e) => { await SendCurrencyInfo(); }; //TODO: change to variable
+        currencyTimer.Elapsed += async (s, e) => await SendCurrencyInfo();
         weatherTimer.Elapsed += async (s, e) => await SendWeatherInfo();
         stocksTimer.Elapsed += async (s, e) => await SendStocksInfo();
     }
@@ -48,7 +48,6 @@ public partial class MainWindow : Window
     private static void SendMessage(string message, int port)
     {
         var udpSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-
         byte[] data = Encoding.UTF8.GetBytes(message);
         EndPoint remotePoint = new IPEndPoint(IPAddress.Loopback, port);
         udpSocket.SendTo(data, SocketFlags.None, remotePoint);
@@ -65,43 +64,58 @@ public partial class MainWindow : Window
         {
             var responseString = responseStreamReader.ReadToEnd();
             JArray currencyInfo = JArray.Parse(responseString);
-
-            string ourString = string.Join("\n", currencyInfo.Select(curr => curr["ccy"]?.ToString() + " - " + curr["buy"]?.ToString() + " ; " + curr["sale"]?.ToString()));
-
-            SendMessageToAllClients("[Currency]\n" + ourString + "\n" ?? "[Currency] Can`t get info about currencies\n");
+            try
+            {
+                string outString = string.Join("\n", currencyInfo.Select(curr => curr["ccy"]?.ToString() + " - " + GetDelta(double.Parse(curr["buy"]?.ToString()), 0.2) + " ; " + GetDelta(double.Parse(curr["sale"]?.ToString()),0.2)));
+                SendMessageToAllClients("[Currency]\n" + outString + "\n" ?? "[Currency] Can`t get info about currencies\n");
+            }
+            catch (Exception)
+            {
+                SendMessageToAllClients("[Currency] Can`t get info about currencies\n");
+            }
         }
-
-
     }
 
     private async Task SendWeatherInfo()
-    {
-        string apiKey = "084581ec-6d83-11ed-bc36-0242ac130002-0845825a-6d83-11ed-bc36-0242ac130002";
+    { 
 
         HttpClient httpClient = new HttpClient();
-
-        httpClient.DefaultRequestHeaders.Add("Authorization", apiKey);
-
-        var response = await httpClient.GetAsync("https://api.openweathermap.org/data/3.0/onecall?lat={49.85}&lon={23.99}&exclude={daily}&appid={3817dc2be2f056779006459f56dda912}");
+  
+        var response = await httpClient.GetAsync("https://api.openweathermap.org/data/2.5/forecast?lat=49.85&lon=23.99&units=metric&appid=3817dc2be2f056779006459f56dda912");
 
         using (var reader = new StreamReader(response.Content.ReadAsStream()))
         {
             var str = reader.ReadToEnd();
-
-            Debug.WriteLine(str);
-
-            var obj = JObject.Parse(str)["hours"];
-
-            SendMessageToAllClients("[Weather]\nLviv - " + obj?.First()["airTemperature"]?["noaa"] + "°C ; " + obj?.ElementAt(19)["airTemperature"]?["noaa"] + "°C\n");
-
-            //SendMessageToAllClients("[Weather]\nLviv - 1.5°C ; 0.5°C\n");
+            var obj = JObject.Parse(str);
+            string outString = "Tempeture: " + obj?["list"]?.First()["main"]?["temp"] + "\nFeels like: " + obj?["list"]?.First()["main"]?["feels_like"] + "\nPressure: " + obj?["list"]?.First()["main"]?["pressure"] + "\nHumidity: " + obj?["list"]?.First()["main"]?["humidity"];
+            SendMessageToAllClients("[Weather]\n" + outString + "\n" ?? "[Weather] Can`t get info about weather\n");
         }
     }
 
-    //TODO
     private async Task SendStocksInfo()
     {
-        throw new NotImplementedException();
+        HttpClient httpClient = new HttpClient();
+        var response = await httpClient.GetAsync("https://api.twelvedata.com/time_series?apikey=562c558816244c41b7681a6b16dc50b5&interval=1min&dp=1&type=stock&symbol=AAPL,ZM&format=JSON");
+        response.EnsureSuccessStatusCode();
+        using (var reader = new StreamReader(response.Content.ReadAsStream()))
+        {
+            var str = reader.ReadToEnd();
+            var obj = JObject.Parse(str);
+            try
+            {
+                double stockAppl = GetDelta(double.Parse(obj?["AAPL"]?["values"]?.First()["open"]?.ToString()), 1);
+                int volumeAppl = (int)GetDelta(double.Parse(obj?["AAPL"]?["values"]?.First()["volume"]?.ToString()), 5);
+                double stockZm = GetDelta(double.Parse(obj?["ZM"]?["values"]?.First()["open"]?.ToString()), 1);
+                int volumeZm = (int)GetDelta(double.Parse(obj?["ZM"]?["values"]?.First()["volume"]?.ToString()), 5);
+                string outString = "Apple: " + stockAppl.ToString() + "$, traded in one minute:" + volumeAppl.ToString() + "\n"
+                    + "Zoom:  " + stockZm.ToString() + "$, traded in one minute:" + volumeZm.ToString() + "\n";
+                SendMessageToAllClients("[Stocks]\n" + outString + "\n" ?? "[Stocks] Can`t get info about stocks\n");
+            }
+            catch (Exception)
+            {
+                SendMessageToAllClients("[Stocks] Can`t get info about stocks\n");
+            }
+        }
     }
 
     private void SendMessageToAllClients(string message)
@@ -114,14 +128,14 @@ public partial class MainWindow : Window
     {
         currencyTimer.Start();
         weatherTimer.Start();
-        //stocksTimer.Start();
+        stocksTimer.Start();
     }
 
     private void Button_Click_3(object sender, RoutedEventArgs e)
     {
         currencyTimer.Stop();
         weatherTimer.Stop();
-        //stocksTimer.Stop();
+        stocksTimer.Stop();
     }
 
     private static int GetFromString(string str) => str switch
@@ -135,5 +149,10 @@ public partial class MainWindow : Window
     private void SelectionChanged1(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
     {
         currencyTimer.Interval = GetFromString(CurrencyComboBox.SelectedValue as string);
+    }
+
+    private static double GetDelta(double num, double percent)
+    {
+        return Math.Round(num + new Random().NextDouble() * num / (100 / percent) - num / (100 / percent), 2);
     }
 }
