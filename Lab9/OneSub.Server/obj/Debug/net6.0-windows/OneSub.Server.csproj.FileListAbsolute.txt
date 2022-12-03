@@ -82,3 +82,111 @@ C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\
 C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
 C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.deps.json
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.exe
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.exe
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.deps.json
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.runtimeconfig.json
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.dll
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.pdb
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server_MarkupCompile.cache
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.g.resources
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfo.cs
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CopyComplete
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\refint\OneSub.Server.dll
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
+C:\Users\1\Desktop\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.deps.json
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.exe
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.exe
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.deps.json
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.runtimeconfig.json
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.dll
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.pdb
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server_MarkupCompile.cache
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.g.resources
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfo.cs
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CopyComplete
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\refint\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
+C:\Users\Admin\Desktop\OneSub V2\OneSub V2\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.deps.json
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.exe
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.exe
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.deps.json
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.runtimeconfig.json
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.dll
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.pdb
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server_MarkupCompile.cache
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.g.resources
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfo.cs
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CopyComplete
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\refint\OneSub.Server.dll
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
+C:\Users\User\Downloads\Telegram Desktop\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.deps.json
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.exe
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.exe
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.deps.json
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.runtimeconfig.json
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.dll
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.pdb
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server_MarkupCompile.cache
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.g.resources
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.AssemblyInfo.cs
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.csproj.CopyComplete
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\refint\OneSub.Server.dll
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
+C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll

@@ -7,4 +7,50 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Fonts\JetMono.ttf" />
+    <None Remove="Images\apple.png" />
+    <None Remove="Images\dollar-sign.png" />
+    <None Remove="Images\euro-sign.png" />
+    <None Remove="Images\feels_like.png" />
+    <None Remove="Images\humidity.png" />
+    <None Remove="Images\pressure.png" />
+    <None Remove="Images\SubOne_logo2.png" />
+    <None Remove="Images\temperature.png" />
+    <None Remove="Images\zoom.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\JetMono.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\apple.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\dollar-sign.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\euro-sign.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\feels_like.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\humidity.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pressure.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\SubOne_logo2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\temperature.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\zoom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

@@ -5,17 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OneSub.Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="SubOne Client" Height="560" Width="315"
+        Background="#3AAFA9" Closing="Window_Closing">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <StackPanel>
-            <CheckBox x:Name="CurrecncyCheckBox" Checked="CurrecncyCheckBox_Checked" Unchecked="CurrecncyCheckBox_Unchecked">Currencies</CheckBox>
-            <CheckBox x:Name="WeatherCheckBox" Checked="WeatherCheckBox_Checked" Unchecked="WeatherCheckBox_Unchecked">Weather</CheckBox>
-            <CheckBox x:Name="StocksCheckBox" Checked="StocksCheckBox_Checked" Unchecked="StocksCheckBox_Unchecked">Stocks</CheckBox>
-        </StackPanel>
-        <TextBox x:Name="MsgBox" Grid.Row="1"></TextBox>
+
+        <CheckBox FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="StocksCheckBox" Checked="StocksCheckBox_Checked" Unchecked="StocksCheckBox_Unchecked" Content="Stocks" Margin="96,363,63,128">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="CurrecncyCheckBox" Checked="CurrecncyCheckBox_Checked" Unchecked="CurrecncyCheckBox_Unchecked" Content="Currency" Margin="86,70,86,419">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="EuroSellBox" HorizontalAlignment="Left" Height="26" Margin="65,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="EuroBuyBox" HorizontalAlignment="Left" Height="26" Margin="193,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="UsdBuyBox" HorizontalAlignment="Left" Height="26" Margin="193,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="UsdSellBox" HorizontalAlignment="Left" Height="26" Margin="65,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70"/>
+        <TextBlock FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" HorizontalAlignment="Left" Margin="76,94,0,0" TextWrapping="Wrap" Text="Sell" VerticalAlignment="Top" RenderTransformOrigin="2.816,1.193"/>
+        <TextBlock FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" HorizontalAlignment="Left" Margin="210,94,0,0" TextWrapping="Wrap" Text="Buy" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="10,107,0,0" VerticalAlignment="Top" Width="50" Source="Images/euro-sign.png" RenderOptions.BitmapScalingMode="Fant"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="15,164,0,0" VerticalAlignment="Top" Width="40" Source="Images/dollar-sign.png" RenderOptions.BitmapScalingMode="Fant"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="TemperatureBox" HorizontalAlignment="Left" Margin="66,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="FeelsLikeBox" HorizontalAlignment="Left" Margin="66,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="PressureBox" HorizontalAlignment="Left" Margin="194,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="HumidityBox" HorizontalAlignment="Left" Margin="194,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <Image Source="Images/temperature.png" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Left" Height="44" Margin="24,247,0,0" VerticalAlignment="Top" Width="30"/>
+        <Image Source="Images/feels_like.png" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Left" Height="40" Margin="17,306,0,0" VerticalAlignment="Top" Width="40"/>
+        <Image Source="Images/pressure.png" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Left" Height="40" Margin="151,251,0,0" VerticalAlignment="Top" Width="36"/>
+        <Image Source="Images/humidity.png" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Left" Height="40" Margin="151,306,0,0" VerticalAlignment="Top" Width="31"/>
+        <Image Source="Images/SubOne_logo2.png" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Center" Height="60" Margin="0,10,0,0" VerticalAlignment="Top" Width="154"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="AppleBox" HorizontalAlignment="Left" Margin="65,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="AppleAverageTrades" HorizontalAlignment="Left" Margin="193,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="ZoomBox" HorizontalAlignment="Left" Margin="65,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <TextBox FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="ZoomAverageTrades" HorizontalAlignment="Left" Margin="193,475,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" Height="26"/>
+        <CheckBox FontFamily="Fonts/JetMono.ttf #JetBrains Mono" x:Name="WeatherCheckBox" Checked="WeatherCheckBox_Checked" Unchecked="WeatherCheckBox_Unchecked" Content="Weather" Margin="92,212,76,279">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Image Source="Images/apple.png" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Left" Height="40" Margin="18,408,0,0" VerticalAlignment="Top" Width="40"/>
+        <Image Source="Images/zoom.png" RenderOptions.BitmapScalingMode="Fant" HorizontalAlignment="Left" Height="38" Margin="18,470,0,0" VerticalAlignment="Top" Width="37"/>
+        <TextBlock FontSize="20" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" HorizontalAlignment="Left" Margin="65,390,0,0" TextWrapping="Wrap" Text="Price" VerticalAlignment="Top" RenderTransformOrigin="2.816,1.193"/>
+        <TextBlock FontSize="14" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" HorizontalAlignment="Left" Margin="190,396,0,0" TextWrapping="Wrap" Text="Deals/min" VerticalAlignment="Top" RenderTransformOrigin="2.816,1.193"/>
+
     </Grid>
 </Window>

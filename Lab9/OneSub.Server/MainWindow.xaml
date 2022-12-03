@@ -3,55 +3,357 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:OneSub.Server"
+
         xmlns:clr="clr-namespace:System;assembly=mscorlib"
         xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="400">
+        Title="SubOne Server" Height="304" Width="360"
+        Background="#3AAFA9">
+
+    <Window.Resources>
+        <Style x:Key="ComboBoxTextBoxStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Grid>
+                            <Border CornerRadius="7,0,0, 7"
+                            BorderThickness="1"
+                            Background="#17252A"
+                                BorderBrush="Black">
+                                <ScrollViewer x:Name="PART_ContentHost"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
     <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="-1,0,4,10">
+                <Image Width="70" Height="30"
+                       Source="Images/SubOne_logo2.png"
+                       RenderOptions.BitmapScalingMode="Fant"
+                       Margin="5, 5, 5, 0"/>
+                <Button Content="Create window" Background="#17252A"  Foreground="#DEF2F1" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Click="Button_Click" Margin="4,10,4,10" >
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="110" 
+                                    Height="23" 
+                                    CornerRadius="10"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" 
+                                                  HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Grid>
+                    <StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Button Margin="5,5,5,0" Background="#17252A" Foreground="#DEF2F1" Click="Button_Click_2" FontFamily="Fonts/JetMono.ttf #JetBrains Mono">Start sending
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Width="112" 
+                                    Height="23" 
+                                    CornerRadius="10"
+                                    Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center" 
+                                                  HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <Button  Margin="5,5,5,4" Background="#17252A" Foreground="#DEF2F1" Click="Button_Click_3" FontFamily="Fonts/JetMono.ttf #JetBrains Mono">Stop sending
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Width="112" 
+                                    Height="23" 
+                                    CornerRadius="10"
+                                    Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center" 
+                                                  HorizontalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="40" Height="40"
+                      Source="Images/currency.png"
+                      RenderOptions.BitmapScalingMode="Fant"
+                      Margin="15, 0, 0, 0"/>
+                <TextBlock FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Text="Currencies" Margin="10, 0, 10, 0" VerticalAlignment="Center"/>
+
+                <ComboBox Background="#17252A" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Margin="55,20,10,20" Name="CurrencyComboBox" SelectionChanged="SelectionChanged1" SelectedIndex="0" Foreground="#DEF2F1">
+
+                    <ComboBox.ItemsSource>
+
+                        <col:ArrayList>
+                            <clr:String>Every second</clr:String>
+                            <clr:String>Every 15 seconds</clr:String>
+                            <clr:String>Every 30 seconds</clr:String>
+                        </col:ArrayList>
+                    </ComboBox.ItemsSource>
+
+                    <ComboBox.Template>
+                        <ControlTemplate TargetType="ComboBox">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition MaxWidth="18"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="PART_EditableTextBox"
+                                 Style="{StaticResource ComboBoxTextBoxStyle}"
+                                 Padding="5, 0, 0, 0"
+                                 Height="{TemplateBinding Height}"/>
+                                <ToggleButton Grid.Column="1" Margin="-1"
+                                     Height="{TemplateBinding Height}"
+                                     
+                                     Focusable="False"
+                                     IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                      
+                                       Background="#17252A">
+
+                                    <Path 
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  
+                                  Data="M 0 0 L 4 4 L 8 0 Z"
+                                  Fill="#DEF2F1" />
+                                </ToggleButton>
+                                <ContentPresenter Name="ContentSite"
+                                      Content="{TemplateBinding SelectionBoxItem}"
+                                      ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                      ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Left"
+                                      Margin="7,0,7,0"/>
+                                <Popup Name="Popup"
+                               Placement="Bottom"
+                               IsOpen="{TemplateBinding IsDropDownOpen}"
+                               AllowsTransparency="True" 
+                               Focusable="False"
+                               PopupAnimation="Slide">
+                                    <Grid Name="DropDown"
+                                  SnapsToDevicePixels="True"                
+                                  MinWidth="{TemplateBinding ActualWidth}"
+                                  MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                        <Border 
+                                    x:Name="DropDownBorder"
+                                    BorderThickness="1"
+                                    CornerRadius="7"
+                                    Background="#17252A"
+                                    BorderBrush="Black"/>
+                                        <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
+                                            <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                        </ScrollViewer>
+                                    </Grid>
+                                </Popup>
+                            </Grid>
+                        </ControlTemplate>
+                    </ComboBox.Template>
+
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="40" Height="40"
+                       Source="Images/weather.png"
+                       RenderOptions.BitmapScalingMode="Fant"
+                       Margin="15, 0, 0, 0"/>
+                <TextBlock FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Text="Weather Forecast" Margin="10, 0, 10, 0" VerticalAlignment="Center"/>
+
+                <ComboBox Foreground="#DEF2F1" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Grid.Row="1" Grid.Column="1" Margin="12,20,10,20" Name="WeatherComboBox" SelectionChanged="SelectionChanged1" Grid.ColumnSpan="3" SelectedIndex="0">
+                    <ComboBox.ItemsSource>
+                        <col:ArrayList>
+                            <clr:String>Every second</clr:String>
+                            <clr:String>Every 15 seconds</clr:String>
+                            <clr:String>Every 30 seconds</clr:String>
+                        </col:ArrayList>
+                    </ComboBox.ItemsSource>
+
+                    <ComboBox.Template>
+                        <ControlTemplate TargetType="ComboBox">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition MaxWidth="18"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="PART_EditableTextBox"
+                                 Style="{StaticResource ComboBoxTextBoxStyle}"
+                                 Padding="5, 0, 0, 0"
+                                 Height="{TemplateBinding Height}"/>
+                                <ToggleButton Grid.Column="1" Margin="-1"
+                                     Height="{TemplateBinding Height}"
+                                     
+                                     Focusable="False"
+                                     IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                      
+                                       Background="#17252A">
+
+                                    <Path 
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  
+                                  Data="M 0 0 L 4 4 L 8 0 Z"
+                                  Fill="#DEF2F1" />
+                                </ToggleButton>
+                                <ContentPresenter Name="ContentSite"
+                                      Content="{TemplateBinding SelectionBoxItem}"
+                                      ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                      ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Left"
+                                      Margin="7,0,7,0"/>
+                                <Popup Name="Popup"
+                               Placement="Bottom"
+                               IsOpen="{TemplateBinding IsDropDownOpen}"
+                               AllowsTransparency="True" 
+                               Focusable="False"
+                               PopupAnimation="Slide">
+                                    <Grid Name="DropDown"
+                                  SnapsToDevicePixels="True"                
+                                  MinWidth="{TemplateBinding ActualWidth}"
+                                  MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                        <Border 
+                                    x:Name="DropDownBorder"
+                                    BorderThickness="1"
+                                    CornerRadius="7"
+                                    Background="#17252A"
+                                    BorderBrush="Black"/>
+                                        <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
+                                            <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                        </ScrollViewer>
+                                    </Grid>
+                                </Popup>
+                            </Grid>
+                        </ControlTemplate>
+                    </ComboBox.Template>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="38" Height="38"
+                       Source="Images/stocks.png"
+                       RenderOptions.BitmapScalingMode="Fant"
+                       Margin="15, 0, 0, 0"/>
+                <TextBlock FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Text="Stocks" Margin="12, 0, 10, 0" VerticalAlignment="Center"/>
+
+                <ComboBox Foreground="#DEF2F1" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Grid.Row="3" Grid.Column="1" Margin="84,20,10,20" Name="StocksComboBox" SelectionChanged="SelectionChanged1" Grid.ColumnSpan="3" SelectedIndex="0">
+                    <ComboBox.ItemsSource>
+                        <col:ArrayList>
+                            <clr:String>Every 15 seconds</clr:String>
+                            <clr:String>Every 30 seconds</clr:String>
+                        </col:ArrayList>
+                    </ComboBox.ItemsSource>
+
+                    <ComboBox.Template>
+                        <ControlTemplate TargetType="ComboBox">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition MaxWidth="18"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Name="PART_EditableTextBox"
+                                 Style="{StaticResource ComboBoxTextBoxStyle}"
+                                 Padding="5, 0, 0, 0"
+                                 Height="{TemplateBinding Height}"/>
+                                <ToggleButton Grid.Column="1" Margin="-1"
+                                     Height="{TemplateBinding Height}"
+                                     
+                                     Focusable="False"
+                                     IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                      
+                                       Background="#17252A">
+
+                                    <Path 
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"
+                                  
+                                  Data="M 0 0 L 4 4 L 8 0 Z"
+                                  Fill="#DEF2F1" />
+                                </ToggleButton>
+                                <ContentPresenter Name="ContentSite"
+                                      Content="{TemplateBinding SelectionBoxItem}"
+                                      ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                      ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Left"
+                                      Margin="7,0,7,0"/>
+                                <Popup Name="Popup"
+                               Placement="Bottom"
+                               IsOpen="{TemplateBinding IsDropDownOpen}"
+                               AllowsTransparency="True" 
+                               Focusable="False"
+                               PopupAnimation="Slide">
+                                    <Grid Name="DropDown"
+                                  SnapsToDevicePixels="True"                
+                                  MinWidth="{TemplateBinding ActualWidth}"
+                                  MaxHeight="{TemplateBinding MaxDropDownHeight}">
+                                        <Border 
+                                    x:Name="DropDownBorder"
+                                    BorderThickness="1"
+                                    CornerRadius="7"
+                                    Background="#17252A"
+                                    BorderBrush="Black"/>
+                                        <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
+                                            <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
+                                        </ScrollViewer>
+                                    </Grid>
+                                </Popup>
+                            </Grid>
+                        </ControlTemplate>
+                    </ComboBox.Template>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="5">
+            <StackPanel Orientation="Horizontal"/>
+        </StackPanel>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Grid Grid.RowSpan="3">
+        <!--<Grid Grid.RowSpan="3" Grid.ColumnSpan="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="131*"/>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="17*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <CheckBox Grid.Row="0" VerticalAlignment="Center" Name="CurrencyCheckBox">Currencies</CheckBox>
-            <CheckBox Grid.Row="1" VerticalAlignment="Center" Name="WeatherCheckBox">Weather forecast</CheckBox>
-            <CheckBox Grid.Row="2" VerticalAlignment="Center" Name="StocksCheckBox">Stocks</CheckBox>
-            <ComboBox Grid.Row="0" Grid.Column="1" Margin="10" Name="CurrencyComboBox" SelectionChanged="SelectionChanged1" SelectedIndex="0">
-                <ComboBox.ItemsSource>
-                    <col:ArrayList>
-                        <clr:String>Щосекунди</clr:String>
-                        <clr:String>Щохвилини</clr:String>
-                        <clr:String>Щогодини</clr:String>
-                    </col:ArrayList>
-                </ComboBox.ItemsSource>
-            </ComboBox>
-            <ComboBox Grid.Row="1" Grid.Column="1" Margin="10" Name="WeatherComboBox"/>
-            <ComboBox Grid.Row="2" Grid.Column="1" Margin="10" Name="StocksComboBox"/>
+             
             
-        </Grid>
 
-        <TextBox x:Name="CustomTextBox" Grid.Row="3" Grid.Column="0" Margin="10"/>
+        </Grid>-->
 
-        <Button Click="Button_Click" Grid.Column="1" Grid.Row="0" Height="{Binding ElementName=SendBtn, Path=Height}" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10">Create Window</Button>
+
+
+        <!--<Button Click="Button_Click" Grid.Column="1" Grid.Row="0" Height="{Binding ElementName=SendBtn, Path=Height}" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10">Create Window</Button>
         <Button Click="Button_Click_1" Grid.Column="1" Grid.Row="3" Padding="10" Margin="10" Name="SendBtn">Send custom message</Button>
         <Button Click="Button_Click_2" Grid.Column="1" Grid.Row="1" Padding="10" Margin="10">Start sending</Button>
-        <Button Click="Button_Click_3" Grid.Column="1" Grid.Row="2" Padding="10" Margin="10">Stop sending</Button>
-        
+        <Button Click="Button_Click_3" Grid.Column="1" Grid.Row="2" Padding="10" FontFamily="Fonts/JetMono.ttf #JetBrains Mono" Margin="10">Stop sending</Button>-->
+
     </Grid>
 </Window>
