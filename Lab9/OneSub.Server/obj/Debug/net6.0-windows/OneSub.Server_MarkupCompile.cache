@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\
+=======
+C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\net6.0-windows\
+>>>>>>> Stashed changes
 OneSub.Server
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+<<<<<<< Updated upstream
 C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\App.xaml
 11407045341
 
 3-1233169557
 196-832784974
+=======
+C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\App.xaml
+11407045341
+
+3-1233169557
+196-755759579
+>>>>>>> Stashed changes
 MainWindow.xaml;
 
 False

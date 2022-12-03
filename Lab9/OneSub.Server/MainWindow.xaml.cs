@@ -150,10 +150,18 @@ public partial class MainWindow : Window
 
                 double stockZm = GetDelta(double.Parse(obj?["ZM"]?["values"]?.First()["open"]?.ToString() ?? "0", CultureInfo.InvariantCulture), 1);
 
+<<<<<<< Updated upstream
                 int volumeZm = (int)GetDelta(double.Parse(obj?["ZM"]?["values"]?.First()["volume"]?.ToString() ?? "0"), 5);
 
                 string outString = "Apple: " + stockAppl.ToString() + "$ " + volumeAppl.ToString() + "\n"
                     + "Zoom: " + stockZm.ToString() + "$ " + volumeZm.ToString() + "\n";
+=======
+//            SendMessageToAllClients("[Weather]\nLviv - " + obj?.First()["airTemperature"]?["noaa"] + "°C ; " + obj?.ElementAt(19)["airTemperature"]?["noaa"] + "°C\n");
+
+            SendMessageToAllClients("[Weather]\nLviv - 1.5°C ; 0.5°C\n");
+        }
+    }
+>>>>>>> Stashed changes
 
                 SendMessageToAllClients("[Stocks]\n" + outString + "\n" ?? "[Stocks] Can`t get info about stocks\n", port => Infos[port].stocks);
             }
