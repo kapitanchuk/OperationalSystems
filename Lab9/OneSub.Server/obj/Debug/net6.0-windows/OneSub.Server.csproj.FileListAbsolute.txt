@@ -83,6 +83,7 @@ C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\
 C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
 C:\Users\Admin\Documents\GitHub\OperationalSystems\Lab9\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.deps.json
 C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.runtimeconfig.json
 C:\Users\1\Desktop\OneSub V2\OneSub.Server\bin\Debug\net6.0-windows\OneSub.Client.exe
@@ -191,5 +192,7 @@ C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\n
 C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.pdb
 C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\OneSub.Server.genruntimeconfig.cache
 C:\Users\Admin\Desktop\OneSub.Client (2)\OneSub.Client\OneSub.Server\obj\Debug\net6.0-windows\ref\OneSub.Server.dll
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
